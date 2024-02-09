@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form/Email</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <section class="contact">
+        <h2>SantiClinic <br>Preencha este Formulário</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Nome:" id="name"
+                    class="item" autocomplete="on">
+                    <div class="error-txt"></div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email:" id="email"
+                    class="item" autocomplete="on">
+                    <div class="error-txt email"></div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Telefone:" id="phone"
+                    class="item" autocomplete="on">
+                    <div class="error-txt"></div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Whatsapp(nr)" id="subject"
+                    class="item" autocomplete="on">
+                    <div class="error-txt"> </div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="2" rows="2"
+                 placeholder="Motivo:" class="item"
+                  autocomplete="off"></textarea>
+                  <div class="error-txt"></div>
+            </div>
+
+            <button type="submit">Enviar mensagem</button>
+
+
+        </form>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Changed font */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('ladies.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.contact {
+    width: 90%; /* Changed to percentage for responsiveness */
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 2rem; /* Changed to a relative unit */
+    color: #ededed;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact form {
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-field {
+    width: 100%; /* Adjusted to full width on small screens */
+    margin-bottom: 1rem; /* Added spacing between fields */
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1rem; /* Changed to a relative unit */
+    color: white;
+    margin: 0;
+}
+
+.textarea-field .item {
+    width: 100%;
+    resize: none;
+    height: 150px; /* Set a fixed height for textarea */
+}
+
+button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 1rem; /* Changed to a relative unit */
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem; /* Added spacing */
+    transition: .5s;
+}
+
+.item::placeholder {
+    color: white; /* Change the color to your desired color */
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+button:hover {
+    box-shadow: none;
+}
+
+.error-txt {
+    font-size: 10.5px;
+    color: #d93025;
+    text-align: left;
+    margin: 5px 0 5px; /* Adjusted margin to 5px top and bottom */
+    display: none; /* Hide error messages by default */
+}
+
+.field .item:hover {
+    background-color: #29b8d1; /* Change background color on hover */
+    border-color: #ccc; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a box-shadow on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .input-field {
+        width: 48%; /* Adjusted for larger screens */
+    }
+}
+
